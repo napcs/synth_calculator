@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#app {
+  text-align: center;
+}
+
+
+form div  {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.output {
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #333;
+}
+
+.output span {
+  width: 30%;
+}
+.output span:nth-of-type(odd){background-color: #ddd;}
+
+
+
+form {
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
