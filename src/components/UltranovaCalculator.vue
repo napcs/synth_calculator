@@ -3,7 +3,7 @@
   <form @submit.prevent="calculate" class="ultra">
     <div>
       <label for="ultranovaBank">Bank:</label>
-      <select for="ultranovaBank" v-model="bank">
+      <select id="ultranovaBank" v-model="bank">
         <option value="2">Bank A</option>
         <option value="3">Bank B</option>
         <option value="4">Bank C</option>
@@ -33,8 +33,8 @@ export default {
         return;
       }
       const bankAbleton = 1; // Bank is fixed at 1
-      const subAbleton = this.bank; // Sub-Bank starts at 2 for Bank A
-      const programAbleton = this.program + 1; // Program is 1-based
+      const subAbleton = Number(this.bank); // Sub-Bank starts at 2 for Bank A
+      const programAbleton = Number(this.program) + 1; // Program is 1-based
       this.$emit('output', { bank: bankAbleton, sub: subAbleton, program: programAbleton });
     },
   },

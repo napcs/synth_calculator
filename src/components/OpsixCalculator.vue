@@ -32,8 +32,8 @@ export default {
         return;
       }
       const bankAbleton = 1; // Bank is fixed at 1
-      const subAbleton = this.bank + 1; // Sub-Bank starts at 1 for Bank 1
-      const programAbleton = this.program + 1; // Program is 1-based
+      const subAbleton = Number(this.bank) + 1; // Sub-Bank starts at 1 for Bank 1
+      const programAbleton = Number(this.program) + 1; // Program is 1-based
       this.$emit('output', { bank: bankAbleton, sub: subAbleton, program: programAbleton });
     },
   },

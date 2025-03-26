@@ -3,7 +3,34 @@
   <form @submit.prevent="calculate" class="nord">
     <div>
       <label for="nordBank">Bank (A-Z):</label>
-      <input id="nordBank" type="text" v-model="bank" maxlength="1" required pattern="[A-Z]" />
+      <select id="nordBank" v-model="bank">
+        <option value="A">Bank A</option>
+        <option value="B">Bank B</option>
+        <option value="C">Bank C</option>
+        <option value="D">Bank D</option>
+        <option value="E">Bank E</option>
+        <option value="F">Bank F</option>
+        <option value="G">Bank G</option>
+        <option value="H">Bank H</option>
+        <option value="I">Bank I</option>
+        <option value="J">Bank J</option>
+        <option value="J">Bank K</option>
+        <option value="L">Bank L</option>
+        <option value="M">Bank M</option>
+        <option value="N">Bank N</option>
+        <option value="O">Bank O</option>
+        <option value="P">Bank P</option>
+        <option value="Q">Bank Q</option>
+        <option value="R">Bank R</option>
+        <option value="S">Bank S</option>
+        <option value="T">Bank T</option>
+        <option value="U">Bank U</option>
+        <option value="V">Bank V</option>
+        <option value="W">Bank W</option>
+        <option value="X">Bank X</option>
+        <option value="Y">Bank Y</option>
+        <option value="Z">Bank Z</option>
+      </select>
     </div>
     <div>
       <label for="nordNumber1">Number 1 (1-5):</label>
@@ -29,7 +56,7 @@ export default {
   methods: {
     calculate() {
       const bankIndex = this.bank.charCodeAt(0) - 65; // A=0, B=1, ..., Z=25
-      const programNumber = (this.number1 - 1) * 5 + this.number2; // Calculate the program number (1-25)
+      const programNumber = (Number(this.number1) - 1) * 5 + Number(this.number2); // Calculate the program number (1-25)
       const totalProgramNumber = bankIndex * 25 + programNumber;
       const bankAbleton = 1; // Bank is fixed at 1
       const subAbleton = Math.floor(bankIndex / 5) + 1; // Sub is determined by the group of 5 banks

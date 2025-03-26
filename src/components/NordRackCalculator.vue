@@ -34,7 +34,7 @@ export default {
         return;
       }
       const bankAbleton = 1; // Bank is fixed at 1
-      const subAbleton = this.bank + 1; // Sub is the bank value + 1
+      const subAbleton = Number(this.bank) + 1; // Sub is the bank value + 1
       const programAbleton = this.program; // Program is the same as the input
       this.$emit('output', { bank: bankAbleton, sub: subAbleton, program: programAbleton });
     },
