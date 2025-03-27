@@ -1,24 +1,15 @@
 # synth-calculator
 
-## Project setup
-```
-yarn install
-```
+Calculate Ableton Live program change bank, sub-bank, and program values from various hardware synths.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+- Nord Lead 2
+- Nord Stage 3
+- Novation Ultranova
+- Arturia Microfreak
+- Korg Monolog
+- Korg OpSix
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Lints and fixes files
-```
-yarn lint
-```
+Live at https://bphogan.com/synth
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Licence: MIT
