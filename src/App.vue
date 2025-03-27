@@ -12,6 +12,7 @@
       <router-link to="/ultranova" class="tab" active-class="active-tab">Ultranova</router-link>
       <router-link to="/opsix" class="tab" active-class="active-tab">Opsix</router-link>
       <router-link to="/mf" class="tab" active-class="active-tab">MicroFreak</router-link>
+      <router-link to="/monologue" class="tab" active-class="active-tab">Monologue</router-link>
     </div>
     <router-view @output="setOutput"></router-view>
     <div class="output">

@@ -6,6 +6,7 @@ import NordRackCalculator from './components/NordRackCalculator.vue';
 import UltranovaCalculator from './components/UltranovaCalculator.vue';
 import OpsixCalculator from './components/OpsixCalculator.vue';
 import MicrofreakCalculator from './components/MicrofreakCalculator.vue';
+import MonologueCalculator from './components/MonologueCalculator.vue';
 
 const routes = [
   { path: '/', redirect: '/nord-stage-3' },
@@ -15,6 +16,7 @@ const routes = [
   { path: '/ultranova', component: UltranovaCalculator },
   { path: '/opsix', component: OpsixCalculator },
   { path: '/mf', component: MicrofreakCalculator },
+  { path: '/monologue', component: MonologueCalculator },
 ];
 
 const router = createRouter({
